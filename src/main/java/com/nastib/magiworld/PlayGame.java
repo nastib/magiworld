@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Assure le déroulement de la partie en distribuant 
+ * <b>Assure le déroulement de la partie en distribuant 
  * les tours à chaque joueur. Il affiche le dommage causé 
- * après chaque coup ceci jusqu'a la fin de la partie.
+ * après chaque coup ceci jusqu'a la fin de la partie.<b/>
  * @author ADMIN
  */
 public class PlayGame {
