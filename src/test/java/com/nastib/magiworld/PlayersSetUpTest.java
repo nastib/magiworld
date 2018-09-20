@@ -27,7 +27,7 @@ public class PlayersSetUpTest {
 
     @Before
     public void setUp() throws Exception {
-        System.setOut(new PrintStream(outContent));
+        //System.setOut(new PrintStream(outContent));
     }
 
     @After

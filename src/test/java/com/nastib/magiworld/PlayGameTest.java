@@ -30,7 +30,7 @@ public class PlayGameTest {
 
     @Before
     public void setUp() throws Exception {
-       System.setOut(new PrintStream(outContent));
+       //System.setOut(new PrintStream(outContent));
     }
 
     @After
