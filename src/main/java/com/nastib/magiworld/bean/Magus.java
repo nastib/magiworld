@@ -1,6 +1,11 @@
+
 package com.nastib.magiworld.bean;
 
-
+/**
+ * Classe des Mages qui étend la classe abstraite Person (Personnage)
+ * et implémente l'interface Attack
+ * @author ADMIN
+ */
 public class Magus extends Person {
 
     //Constructor

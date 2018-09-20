@@ -1,7 +1,13 @@
+
 package com.nastib.magiworld.attack;
 
 import com.nastib.magiworld.bean.Person;
 
+/**
+ * Classe qui implémente l'interface Attack et redefinie 
+ * les attaques des Rôdeurs
+ * @author ADMIN
+ */
 public class ProwlerAttack implements Attack {
     private String description ;
     

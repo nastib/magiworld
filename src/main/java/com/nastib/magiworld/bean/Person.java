@@ -1,7 +1,12 @@
+
 package com.nastib.magiworld.bean;
 
 import com.nastib.magiworld.attack.Attack;
 
+/**
+ * Classe abstraite des personnages qui implémente l'interface Attack 
+ * @author ADMIN
+ */
 public abstract class Person {
 
     protected int level;

@@ -1,5 +1,11 @@
+
 package com.nastib.magiworld.bean;
 
+/**
+ * Classe des Guerriers qui étend la classe abstraite Person (Personnage)
+ * et implémente l'interface Attack
+ * @author ADMIN
+ */
 public class Warrior extends Person {
 
     public Warrior(){}

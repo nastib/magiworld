@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.nastib.magiworld;
 
 import com.nastib.magiworld.attack.MagusAttack;
@@ -31,7 +27,7 @@ public class PlayersSetUp {
     private  boolean responseIsGood;
     
     /**
-     * 
+     * Boucle de sélection des personnages du jeu
      * @return 
      */
     public List<Person> setUp() {
@@ -64,7 +60,7 @@ public class PlayersSetUp {
     }    
            
     /**
-     * 
+     * Affiche les types de personnage à choisir
      * @param choix 
      */
     private void displaySelectedPerson(int person) {
@@ -85,7 +81,7 @@ public class PlayersSetUp {
     }
     
     /**
-     * 
+     * Pour chauqe joueur, saisie les attributs de chaque personnage et extancie l'objet adéquat  
      * @param joueur
      * @param person 
      */

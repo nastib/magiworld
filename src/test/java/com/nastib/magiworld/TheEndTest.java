@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.nastib.magiworld;
 
 import com.nastib.magiworld.bean.Magus;
@@ -35,7 +31,6 @@ public class TheEndTest {
         persons.get(1).setLife(1);
         String result = new TheEnd().end(persons);
         String expResult = "Bravo Mage vous avez gagné la partie !";
-        //System.out.println(result);
         assertEquals(expResult, result);
 
     }

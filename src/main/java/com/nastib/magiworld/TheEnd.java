@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.nastib.magiworld;
 
 import com.nastib.magiworld.bean.Person;
@@ -14,6 +10,12 @@ import java.util.List;
  */
 public class TheEnd {
     
+    /**
+     * Formate et retourne le message de la fin de la partie.
+     * Il prend en paramettre une liste d'objets des personnages du jeu.
+     * @param persons
+     * @return 
+     */
     public String end(List<Person> persons){
         
         if (persons.get(0).getLife() <= 0){

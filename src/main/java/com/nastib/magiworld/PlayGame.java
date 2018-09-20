@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.nastib.magiworld;
 
 import com.nastib.magiworld.bean.Person;
@@ -12,7 +8,9 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- *
+ * Assure le déroulement de la partie en distribuant 
+ * les tours à chaque joueur. Il affiche le dommage causé 
+ * après chaque coup ceci jusqu'a la fin de la partie.
  * @author ADMIN
  */
 public class PlayGame {
@@ -21,10 +19,19 @@ public class PlayGame {
     private boolean responseIsGood;
     private int resp, cpt;
 
+    /**
+     * Constructor
+     * @param players 
+     */
     public PlayGame(List<Person> players) {
         this.players = players;
     }
     
+    /**
+     * Methode qui joue la partie
+     * @return 
+     * Retourne le message de fin de la partie qui annonce le gagnant
+     */
     public String play(){
         
         //Start party

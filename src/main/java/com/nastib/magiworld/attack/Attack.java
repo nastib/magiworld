@@ -1,7 +1,11 @@
+
 package com.nastib.magiworld.attack;
 
 import com.nastib.magiworld.bean.Person;
-
+/**
+ * Interface qui défini les type d'attack des personnages 
+ * @author ADMIN
+ */
 public interface Attack {
 
     /**
