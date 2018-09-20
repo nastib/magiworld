@@ -11,13 +11,11 @@ public class Warrior extends Person {
     //Methodes 
     @Override
     public String basicAttack(Person person) {
-        String result = attack.basicAttack(this,person);
-        return result;
+        return attack.basicAttack(this,person);
     }
 
     @Override
     public String specialAttack(Person person) {
-       String result =  attack.specialAttack(this, person);
-       return result;
+       return attack.specialAttack(this, person);
     }    
 }

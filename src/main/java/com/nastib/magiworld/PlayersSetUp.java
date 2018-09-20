@@ -22,7 +22,7 @@ import java.util.Scanner;
  *
  * @author ADMIN
  */
-public class Persons {
+public class PlayersSetUp {
     
     private  final Scanner sc = new Scanner(System.in);
     private  Person player1, player2;

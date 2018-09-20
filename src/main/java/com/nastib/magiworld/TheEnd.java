@@ -14,13 +14,12 @@ import java.util.List;
  */
 public class TheEnd {
     
-    public static void end(List<Person> persons){
-        //The TheEnd
-        System.out.println("\nThe End. ");
+    public String end(List<Person> persons){
+        
         if (persons.get(0).getLife() <= 0){
-            System.out.println("Bravo "+ persons.get(1).getFullname() +" vous avez gagné la partie !");
-        } else if(persons.get(1).getLife() <= 0){    
-           System.out.println("Bravo "+ persons.get(0).getFullname()+" Vous avez gagné la partie !");
-        } 
+            return "Bravo "+ persons.get(1).getFullname() +" vous avez gagné la partie !" ;
+        }    
+        return "Bravo "+ persons.get(0).getFullname()+" vous avez gagné la partie !";
+
     }
 }

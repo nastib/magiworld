@@ -13,13 +13,13 @@ public class Magus extends Person {
     //Methodes 
     @Override
     public String basicAttack(Person person) {
-        String result = attack.basicAttack(this,person);
+        String result = getAttack().basicAttack(this,person);
         return result;
     }
 
     @Override
     public String specialAttack(Person person) {
-       String result =  attack.specialAttack(this, person);
+       String result =  getAttack().specialAttack(this, person);
        return result;
     }  
 }

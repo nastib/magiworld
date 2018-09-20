@@ -22,11 +22,11 @@ import org.junit.Before;
  *
  * @author ADMIN
  */
-public class PersonsTest {
+public class PlayersSetUpTest {
     
     private static final  ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     
-    public PersonsTest() {
+    public PlayersSetUpTest() {
     }
 
     @Before
@@ -40,16 +40,16 @@ public class PersonsTest {
     }
 
     /**
-     * Test of setUp method, of class Persons.
+     * Test of setUp method, of class PlayersSetUp.
      */
     @Test
     public void testSetUp() {
-        System.out.println("test de la methide testSetUp()!");
+        System.out.println("test de la methode testSetUp()!");
         List<Person> expResult = new ArrayList<>();
-        System.setIn(new ByteArrayInputStream("1\n6\n2\n2\n2\n3\n5\n1\n2\n2\n".getBytes()));
-        List<Person> result = new Persons().setUp();
-        expResult.add(new Warrior(6, 2, 2, 2, "Warrior"));
-        expResult.add(new Magus(5, 1, 2, 2, "Magus"));             
+        System.setIn(new ByteArrayInputStream("1\n1\n1\n0\n0\n3\n1\n0\n0\n1\n".getBytes()));
+        List<Person> result = new PlayersSetUp().setUp();
+        expResult.add(new Warrior(1, 1, 0, 0, "Warrior"));
+        expResult.add(new Magus(1, 0, 0, 1, "Magus"));             
         assertEquals("testSetUp fail", expResult.toString(), result.toString());
 
     }

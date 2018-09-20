@@ -20,8 +20,8 @@ public class Main {
     public static void main(String[] args) {
         
         greeting();
-        List<Person> pers = new Persons().setUp();
-        new PlayGame(pers).play();
+        List<Person> pers = new PlayersSetUp().setUp();
+        System.out.println(new PlayGame(pers).play());
 
     }
     

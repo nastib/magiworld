@@ -5,7 +5,10 @@
  */
 package com.nastib.magiworld;
 
+import com.nastib.magiworld.bean.Magus;
 import com.nastib.magiworld.bean.Person;
+import com.nastib.magiworld.bean.Warrior;
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -24,11 +27,18 @@ public class TheEndTest {
      */
     @Test
     public void testEnd() {
-        System.out.println("end");
-        List<Person> persons = null;
-        TheEnd.end(persons);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("test de la methode end()");
+        List<Person> persons = new ArrayList<>();
+        persons.add(new Warrior(6, 2, 2, 2, "Gerrier"));
+        persons.add(new Magus(5, 1, 2, 2, "Mage")); 
+        persons.get(0).setLife(0);
+        persons.get(1).setLife(1);
+        String result = new TheEnd().end(persons);
+        String expResult = "Bravo Mage vous avez gagné la partie !";
+        //System.out.println(result);
+        assertEquals(expResult, result);
+
     }
     
 }
+
